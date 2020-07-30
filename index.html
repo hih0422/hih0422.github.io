@@ -11,12 +11,12 @@ title: Home
 <div>
   <h2>MSA(Microservice Architecture)를 토대로 Docker를 사용한 RMS(Resource Management System) 구축하기</h2>
   <br>
-  <h2>MSA란?</h2>
+  <h2>MSA 란?</h2>
   <p>마이크로서비스는 전통적인 모놀리틱(monolithic)방식과는 다르게 각각의 핵심 기능을 세분화하여 서비스 단위로 제공합니다.</p>
   <p>사용자의 요청은 API Gateway를 통하여 서비스에게 전달 되며 서비스간의 호출도 API Gateway를 통하여 진행됩니다.<p> 
   <p>서비스들은 서로 독립적으로 배포 가능하며, 서로간의 의존성은 최소화 합니다.</p>
   <p>또한, 각 서비스들은 서로간의 통신을 정의된 API(REST..)를 사용해 진행합니다.</P>
- 
+  <br>
   <img src="images/msa.PNG">
   <p>출처:https://brunch.co.kr/@sangjinkang/11</p>
   <br>
@@ -26,34 +26,3 @@ title: Home
   <p>Host 서버는 NCP에서 구동중이고, Docker container를 하나의 서버로 생각하고 NCP 위에 각 서비스 + API Gateway + DB 컨테이너를 구동합니다.</p>
   <img src="images/firstwriting.PNG">
 </div>  
-
-
-
-<!-- <div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div> -->
