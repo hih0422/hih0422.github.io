@@ -1,1 +1,1 @@
-SM.log.seongmin Kim
+# SM.log.seongmin Kim
